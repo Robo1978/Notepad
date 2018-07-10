@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D39441CC20F4A4BC00351168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39441CB20F4A4BC00351168 /* AppDelegate.swift */; };
-		D39441CE20F4A4BC00351168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39441CD20F4A4BC00351168 /* ViewController.swift */; };
 		D39441D120F4A4BC00351168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39441CF20F4A4BC00351168 /* Main.storyboard */; };
 		D39441D420F4A4BC00351168 /* Notepad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D39441D220F4A4BC00351168 /* Notepad.xcdatamodeld */; };
 		D39441D620F4A4BE00351168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39441D520F4A4BE00351168 /* Assets.xcassets */; };
 		D39441D920F4A4BE00351168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39441D720F4A4BE00351168 /* LaunchScreen.storyboard */; };
+		D39441E520F4A63300351168 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39441E420F4A63300351168 /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D39441C820F4A4BC00351168 /* Notepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notepad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39441CB20F4A4BC00351168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D39441CD20F4A4BC00351168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D39441D020F4A4BC00351168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D39441D320F4A4BC00351168 /* Notepad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notepad.xcdatamodel; sourceTree = "<group>"; };
 		D39441D520F4A4BE00351168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D39441D820F4A4BE00351168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D39441DA20F4A4BE00351168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39441E420F4A63300351168 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				D39441CB20F4A4BC00351168 /* AppDelegate.swift */,
-				D39441CD20F4A4BC00351168 /* ViewController.swift */,
-				D39441CF20F4A4BC00351168 /* Main.storyboard */,
-				D39441D520F4A4BE00351168 /* Assets.xcassets */,
-				D39441D720F4A4BE00351168 /* LaunchScreen.storyboard */,
+				D39441E220F4A53200351168 /* Controllers */,
+				D39441E120F4A52900351168 /* Views */,
+				D39441E020F4A51400351168 /* Model */,
+				D39441E320F4A54800351168 /* Supporting Files */,
 				D39441DA20F4A4BE00351168 /* Info.plist */,
-				D39441D220F4A4BC00351168 /* Notepad.xcdatamodeld */,
 			);
 			path = Notepad;
+			sourceTree = "<group>";
+		};
+		D39441E020F4A51400351168 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D39441D220F4A4BC00351168 /* Notepad.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D39441E120F4A52900351168 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D39441CF20F4A4BC00351168 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D39441E220F4A53200351168 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D39441E420F4A63300351168 /* NotesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D39441E320F4A54800351168 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D39441D520F4A4BE00351168 /* Assets.xcassets */,
+				D39441D720F4A4BE00351168 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D39441D420F4A4BC00351168 /* Notepad.xcdatamodeld in Sources */,
-				D39441CE20F4A4BC00351168 /* ViewController.swift in Sources */,
 				D39441CC20F4A4BC00351168 /* AppDelegate.swift in Sources */,
+				D39441E520F4A63300351168 /* NotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
